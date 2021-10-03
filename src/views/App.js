@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.scss";
+import TodosApp from "./Todos/TodosApp";
 
 function App() {
   return (
@@ -8,6 +9,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>The Todo App has written by React</p>
       </header>
+
+      <TodosApp />
     </div>
   );
 }
