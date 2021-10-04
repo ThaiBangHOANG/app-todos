@@ -1,6 +1,8 @@
 import logo from "./logo.svg";
 import "./App.scss";
 import TodosApp from "./Todos/TodosApp";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -8,9 +10,20 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>The Todo App has written by React</p>
-      </header>
 
-      <TodosApp />
+        <TodosApp />
+      </header>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </div>
   );
 }
